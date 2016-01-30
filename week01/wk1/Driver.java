@@ -37,6 +37,13 @@ public class Driver {
         } else {
             System.out.println( "NOT EQUAL" );
         }
-    }
+
+    }   //7. Runtime output is 115.0 EQUAL.
+        //Reflection is the ability of a program to
+        //examine and modify the structure and behavior of an object at runtime.
+        //We get the output EQUAL because when we use the getClass()
+        //method, despite the class accepting two different types the
+        //class call is the same.
+
 
 }
