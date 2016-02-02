@@ -7,6 +7,8 @@ public class TestAbstractFactoryPattern {
         msg = parser.parse();
         System.out.println(msg);
         System.out.println("************************************");
+
+
         parserFactory = ParserFactoryProducer.getFactory("LondonFactory");
         parser = parserFactory.getParserInstance("LondonFEEDBACK");
         msg = parser.parse();
