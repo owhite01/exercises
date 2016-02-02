@@ -3,12 +3,12 @@ public class ParserFactoryProducer {
 
     public static AbstractParserFactory getFactory(String factoryType){
 
-        if(factoryType == "NYFactory"){
-            return new NYParserFactory();
+        if(factoryType == "NYCFactory"){
+            return new NYCParserFactory();
         }
 
-        if(factoryType == "TWFactory"){
-            return new TWParserFactory();
+        if(factoryType == "LondonFactory"){
+            return new LondonParserFactory();
         }
 
         return null;

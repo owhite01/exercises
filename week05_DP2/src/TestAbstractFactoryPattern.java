@@ -5,10 +5,6 @@ public class TestAbstractFactoryPattern {
         XMLParser parser = parserFactory.getParserInstance("NYCORDER");
         String msg = "";
         msg = parser.parse();
-        package abstractfactory;
-    }
-
-
         System.out.println(msg);
         System.out.println("************************************");
         parserFactory = ParserFactoryProducer.getFactory("LondonFactory");
@@ -16,3 +12,4 @@ public class TestAbstractFactoryPattern {
         msg = parser.parse();
         System.out.println(msg);
     }
+}
