@@ -1,5 +1,5 @@
 
-public class NYCParserFactory implements XMLParser {
+public class NYCFeedbackParser implements XMLParser {
 
     @Override
     public String parse(){

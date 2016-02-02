@@ -4,11 +4,11 @@ public class ParserFactoryProducer {
     public static AbstractParserFactory getFactory(String factoryType){
 
         if(factoryType == "NYCFactory"){
-            return new NYCParserFactory();
+            return new NYCFeedbackParser();
         }
 
         if(factoryType == "LondonFactory"){
-            return new LondonParserFactory();
+            return new LondonFeedbackParser();
         }
 
         return null;
