@@ -1,8 +1,5 @@
 
 public class ParserFactoryProducer {
-    private ParserFactoryProducer(){
-        throw new AssertionError();
-    }
 
     public static AbstractParserFactory getFactory(String factoryType){
 
@@ -10,6 +7,9 @@ public class ParserFactoryProducer {
             return new NYParserFactory();
         }
 
+        if(factoryType == "TWFactory"){
+            return new TWParserFactory();
+        }
 
         return null;
     }
