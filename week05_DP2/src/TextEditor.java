@@ -1,6 +1,4 @@
-/**
- * Created by OliverW on 02/02/2016.
- */
+
 public class TextEditor {
     private final TextFormatter textFormatter;
 
@@ -8,6 +6,8 @@ public class TextEditor {
         this.textFormatter = textFormatter;
     }
 
-
+    public void publishText(String text){
+        textFormatter.format(text);
+    }
 
 }
