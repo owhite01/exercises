@@ -1,6 +1,6 @@
 
 public class CapTextFormatter implements TextFormatter{
-    String capText = "[CapTextFormatter]:";
+    public static String capText = "[CapTextFormatter]:";
 
     @Override
     public void format(String text) {
