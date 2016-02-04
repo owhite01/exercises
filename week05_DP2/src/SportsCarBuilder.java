@@ -9,46 +9,48 @@ public class SportsCarBuilder implements CarBuilder {
 
     @Override
     public void buildBodyStyle(){
-        car.setBodyStyle("External dimensions: overall length (inches): 202.9,\n" +
-                "   overall width (inches): 76.2, overall height (inches): 60.7,\n" +
-                "   wheelbase (inches): 112.9, front track (inches): 65.3,\n" +
-                "   rear track (inches): 65.5 and curb to curb turning circle (feet): 39.5");
+        car.setBodyStyle("External dimensions: overall length (inches): 192.3,\n" +
+                "   overall width (inches): 75.5, overall height (inches): 54.2,\n" +
+                "   wheelbase (inches): 112.3, front track (inches): 63.7,\n" +
+                "   rear track (inches): 64.1 and curb to curb turning circle (feet): 37.7");
     }
     @Override
     public void buildPower(){
-        car.setPower("285 hp @ 6,500 rpm; 253 ft lb of torque @ 4,000 rpm");
+        car.setPower("323 hp @ 6,800 rpm; 278 ft lb of torque @ 4,800 rpm");
     }
 
 
 
     @Override
     public void buildEngine(){
-        car.setEngine(".5L Duramax V 6 DOHC");
+        car.setEngine("3.6L V 6 DOHC and variable valve timing");
     }
 
 
     @Override
     public void buildBreaks(){
-        car.setBreaks("Four-wheel disc brakes: two ventilated. Electronic brake distribution");
+        car.setBreaks("Four-wheel disc brakes: two ventilated. Electronic brake distribution.\n" +
+                "   Stability control");
 
     }
 
 
     @Override
     public void buildSeats(){
-        car.setSeats("Front seat centre armrest.Rear seat centre armrest.Split-folding rear seats");
+        car.setSeats("Driver sports front seat with one power adjustments manual height,\n" +
+                "   front passenger seat sports front seat with one power adjustments");
     }
 
 
     @Override
     public void buildWindows(){
-        car.setWindows("Laminated side windows.Fixed rear window with defroster");
+        car.setWindows("Front windows with one-touch on two windows");
     }
 
 
     @Override
     public void buildFuelType(){
-        car.setFuelType("Diesel 19 MPG city, 29 MPG highway, 23 MPG combined and 437 mi. range");
+        car.setFuelType("Petrol 17 MPG city, 28 MPG highway, 20 MPG combined and 380 mi. range");
     }
 
     @Override
