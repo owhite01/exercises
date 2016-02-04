@@ -1,3 +1,4 @@
+package Question3;
 
 public class Question3 {
     //The Abstract factory design pattern is based around the idea of a main factory that creates other factory.

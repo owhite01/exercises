@@ -1,5 +1,8 @@
+package Strategy;
 
-public class LondonFeedbackParser implements XMLParser{
+import Strategy.XMLParser;
+
+public class LondonFeedbackParser implements XMLParser {
 
     @Override
     public String parse(){

@@ -1,3 +1,6 @@
+package Strategy;
+
+import Strategy.XMLParser;
 
 public class NYCFeedbackParser implements XMLParser {
 

@@ -1,3 +1,4 @@
+package Strategy;
 
 public class TestStrategyPattern {
     public static void main(String[] args) {

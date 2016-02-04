@@ -1,3 +1,4 @@
+package Builder;
 
 public class SedanCarBuilder implements CarBuilder {
     private Car car = new Car("Sedan");

@@ -1,5 +1,8 @@
+package Strategy;
 
-public class LondonParserFactory implements AbstractParserFactory{
+import Strategy.AbstractParserFactory;
+
+public class LondonParserFactory implements AbstractParserFactory {
     @Override
     public XMLParser getParserInstance(String parserType) {
         if(parserType == "LondonFEEDBACK"){

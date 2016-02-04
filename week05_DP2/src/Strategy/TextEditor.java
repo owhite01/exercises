@@ -1,3 +1,4 @@
+package Strategy;
 
 public class TextEditor {
     private final TextFormatter textFormatter;
