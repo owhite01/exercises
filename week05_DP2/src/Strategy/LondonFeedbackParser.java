@@ -1,6 +1,5 @@
 package Strategy;
 
-import Strategy.XMLParser;
 
 public class LondonFeedbackParser implements XMLParser {
 
