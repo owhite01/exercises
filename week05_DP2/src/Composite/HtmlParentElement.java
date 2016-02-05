@@ -30,6 +30,41 @@ public class HtmlParentElement extends HtmlTag{
 
     }
 
+    @Override
+    public void setEndTag(String tag) {
+        this.endTag = tag;
+
+    }
+
+    @Override
+    public void setTagBody(String tagBody) {
+        super.setTagBody(tagBody);
+    }
+
+    @Override
+    public void addChildTag(HtmlTag htmlTag){
+        childrenTag.add(htmlTag);
+    }
+
+    @Override
+    public void removeChildTag(HtmlTag htmlTag){
+        childrenTag.remove(htmlTag);
+    }
+
+
+    @Override
+    public List<HtmlTag>getChildren(){
+        return childrenTag;
+    }
+
+
+    @Override
+    public void generateHtml() {
+        System.out.println(startTag);
+        for(HtmlTag tag : childrenTag){
+            tag.generateHtml();
+        }
+        System.out.println(endTag);
 
     }
 
