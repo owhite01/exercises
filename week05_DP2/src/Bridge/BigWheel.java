@@ -18,7 +18,6 @@ public class BigWheel extends Car {
                 +" for "+ typeCar);
     }
 
-
     @Override
     public void produceProduct() {
         String carProd = product.productName();

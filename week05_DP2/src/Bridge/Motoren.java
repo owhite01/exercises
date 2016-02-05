@@ -18,7 +18,6 @@ public class Motoren extends Car {
                 +" for "+carType);
     }
 
-
     @Override
     public void produceProduct() {
         String carProd = product.productName();

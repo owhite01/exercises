@@ -13,9 +13,6 @@ public class GearLocking implements Product {
         System.out.println("Producing Gear Locking System");
     }
 
-
-
-
     @Override
     public String productName() {
         return product;
