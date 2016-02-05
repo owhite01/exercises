@@ -1,19 +1,21 @@
 package Bridge;
 
-/**
- * Created by OliverW on 05/02/2016.
- */
+
 public abstract class Car {
+    private final Product product;
+    private final String carType;
 
-    public void produceProduct(){
-
+    public Car(Product product,String carType){
+        this.product = product;
+        this.carType = carType;
     }
-    public void assemble(){
 
-    }
+    public abstract void assemble();
+    public abstract void produceProduct();
 
     public void printDetails(){
-        System.out.println("Details");
+        System.out.println("Car: "+carType+", Product:"+product.productName());
     }
+
 
 }

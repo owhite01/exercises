@@ -10,7 +10,7 @@ public class GearLocking implements Product {
 
     @Override
     public void produce() {
-        System.out.println("Producing " + this.product);
+        System.out.println("Producing Gear Locking System");
     }
 
 

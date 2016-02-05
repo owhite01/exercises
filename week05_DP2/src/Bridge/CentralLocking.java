@@ -1,8 +1,6 @@
 package Bridge;
 
-/**
- * Created by OliverW on 05/02/2016.
- */
+
 public class CentralLocking implements Product {
     private String product;
 
@@ -12,7 +10,7 @@ public class CentralLocking implements Product {
 
     @Override
     public void produce() {
-        System.out.println("Producing " + this.product);
+        System.out.println("Producing Central Locking System");
     }
 
 
