@@ -1,8 +1,6 @@
 package Bridge;
 
-/**
- * Created by OliverW on 05/02/2016.
- */
+
 public class GearLocking implements Product {
     private String product;
 
@@ -12,11 +10,14 @@ public class GearLocking implements Product {
 
     @Override
     public void produce() {
-
+        System.out.println("Producing " + this.product);
     }
+
+
+
 
     @Override
     public String productName() {
-        return null;
+        return product;
     }
 }

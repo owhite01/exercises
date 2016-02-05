@@ -1,9 +1,15 @@
 package Bridge;
 
-/**
- * Created by OliverW on 05/02/2016.
- */
+
 public class Motoren extends Car {
+    public Product product;
+    public String modelName;
+
+    public Motoren(Product product, String modelName) {
+        this.product = product;
+        this.modelName = modelName;
+    }
+
 
 
 }
