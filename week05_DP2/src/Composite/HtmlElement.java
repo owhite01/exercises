@@ -1,53 +1,50 @@
 package Composite;
 
-import java.util.List;
 
 
 public class HtmlElement extends HtmlTag {
 
     public String name;
+    public String startTag;
+    public String endTag;
+    public String tagBody;
 
-    public HtmlElement(String name) {
-        this.name = name;
+
+
+    public HtmlElement(String tagName){
+        this.name = tagName;
+        this.tagBody = "";
+        this.startTag = "";
+        this.endTag = "";
     }
+
 
     @Override
     public String getTagName() {
-        return null;
+        return name;
     }
+
 
     @Override
     public void setStartTag(String tag) {
-
+        this.startTag = tag;
     }
 
     @Override
     public void setEndTag(String tag) {
-
+        this.endTag = tag;
     }
 
-    @Override
-    public void setTagBody(String tagBody) {
-        super.setTagBody(tagBody);
-    }
 
     @Override
-    public void addChildTag(HtmlTag htmlTag) {
-        super.addChildTag(htmlTag);
+    public void setTagBody(String tagBody){
+        this.tagBody = tagBody;
     }
 
-    @Override
-    public void removeChildTag(HtmlTag htmlTag) {
-        super.removeChildTag(htmlTag);
-    }
-
-    @Override
-    public List<HtmlTag> getChildren() {
-        return super.getChildren();
-    }
 
     @Override
     public void generateHtml() {
-
+        System.out.println(startTag+""+tagBody+""+endTag);
     }
+
 }

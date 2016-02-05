@@ -1,52 +1,38 @@
 package Composite;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class HtmlParentElement extends HtmlTag{
     public String name;
+    private String startTag;
+    private String endTag;
+    private List<HtmlTag>childrenTag;
+
 
     public HtmlParentElement(String name) {
         this.name = name;
+        this.startTag = "";
+        this.endTag = "";
+        this.childrenTag = new ArrayList<HtmlTag>();
+        ;
     }
 
     @Override
     public String getTagName() {
-        return null;
+        return name;
     }
 
     @Override
     public void setStartTag(String tag) {
+        this.startTag = tag;
 
     }
 
-    @Override
-    public void setEndTag(String tag) {
 
     }
 
-    @Override
-    public void setTagBody(String tagBody) {
-        super.setTagBody(tagBody);
-    }
 
-    @Override
-    public void addChildTag(HtmlTag htmlTag) {
-        super.addChildTag(htmlTag);
-    }
 
-    @Override
-    public void removeChildTag(HtmlTag htmlTag) {
-        super.removeChildTag(htmlTag);
-    }
-
-    @Override
-    public List<HtmlTag> getChildren() {
-        return super.getChildren();
-    }
-
-    @Override
-    public void generateHtml() {
-
-    }
 }
