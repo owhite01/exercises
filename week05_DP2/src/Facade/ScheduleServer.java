@@ -21,7 +21,7 @@ public interface ScheduleServer {
 
     void destroySystemObjects();
 
-    void destoryListeners();
+    void destroyListeners();
 
     void destoryContext();
 

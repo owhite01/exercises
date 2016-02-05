@@ -19,6 +19,16 @@ public class FacadeForScheduleServer{
     }
 
 
+    public void stopServer(){
+        server.releaseProcesses();
+        server.destory();
+        server.destroySystemObjects();
+        server.destroyListeners();
+        server.destoryContext();
+        server.shutdown();
+    }
+
+
 
 
 }
