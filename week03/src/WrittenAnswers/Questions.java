@@ -43,7 +43,9 @@ public class Questions {
     //one instance of its class. An alternate, would be to use a privately visible constructor.
 
 
-    //6.
+    //6. A singleton when instantiated in the constructor could take in arguments which would not be
+    //available at initialisation. In addidion, it could possibly have an effect on performace of a
+    //system is alot of unnecessary initialisation must happen.
 
 
 
