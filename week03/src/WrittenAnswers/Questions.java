@@ -33,7 +33,17 @@ public class Questions {
     //is relieved.
 
 
-    //4.
+    //4. As windowListener is an interface, if a class implements this interface it would need
+    //to Override the methods in this interface to be implemented. As this interface contains lots of methods
+    //that do not do anything, it gives the implementing class the flexibility to pick and choose
+    //which of the methods are applicable to the implementation.
+
+
+    //5. The most common way would be to use a singleton design pattern which by definition only allows
+    //one instance of its class. An alternate, would be to use a privately visible constructor.
+
+
+    //6.
 
 
 
