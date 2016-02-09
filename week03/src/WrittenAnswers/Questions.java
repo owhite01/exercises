@@ -44,8 +44,25 @@ public class Questions {
 
 
     //6. A singleton when instantiated in the constructor could take in arguments which would not be
-    //available at initialisation. In addidion, it could possibly have an effect on performace of a
+    //available at initialisation. In addition, it could possibly have an effect on performace of a
     //system is alot of unnecessary initialisation must happen.
+
+
+    //7. One way would be to use the method isChanged() that returns a boolean if the object has
+    //changed. The notifyObservers() method depends on whether the object has changed, if so,
+    // then notify all of its observers and then call the clearChanged method to indicate that this
+    // object has no longer changed.
+
+
+    //8. This is true, the MVC pattern contains both an observer and an observable.
+
+
+    //9. toString() created a new object and is a commonly used Java method. Clone() also returns an object.
+
+
+    //10. Factory method is implemented by alot of classes normally means a Factory method design pattern is being
+    //used. In addition an object is created.
+
 
 
 
