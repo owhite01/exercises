@@ -28,7 +28,12 @@ public class Questions {
 
 
 
-    //3. The interface specification in question 4 has this structure.
+    //3. The interface specification in question 4 has this structure. When an interface is waiting for
+    //an update from the calling method, other methods may be declared but are overlooked when the update
+    //is relieved.
+
+
+    //4.
 
 
 
