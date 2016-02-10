@@ -63,6 +63,10 @@ public class Questions {
     //10. Factory method is implemented by alot of classes normally means a Factory method design pattern is being
     //used. In addition an object is created.
 
+    //11.
+    //output = new RandomCaseFilter(new WrapFilter(new BufferedWriter(new PrintWriter(System.out)), 15));
+    //Decorator pattern
+
 
 
 
