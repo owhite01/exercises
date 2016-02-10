@@ -1,9 +1,9 @@
 package xpay;
 
-//import lombok.Data;
+/*import lombok.Data;
 
-//@Data
-/*
+@Data
+
 public class XpayImpl implements Xpay {
     private String creditCardNo;
     private String customerName;
