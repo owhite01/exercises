@@ -2,6 +2,7 @@
 object FirstQuestion {
   def main(args: Array[String]): Unit = {
     func1("Sunny", 100)
+    func2("Partly Cloudy", 100)
 
   }
 
@@ -17,9 +18,8 @@ object FirstQuestion {
   }
 
   def func2(weather: String, temp: Int): Unit ={
-    var result = "True"
-
-    if (temp > 80) {
+    if (weather == "Sunny" || weather == "Partly Cloudy") {
+      if (temp > 80 || temp < 20)
       println("True")
     }
     else
