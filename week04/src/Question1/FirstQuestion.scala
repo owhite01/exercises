@@ -4,7 +4,8 @@ object FirstQuestion {
     func1("Sunny", 100)
     func2("Partly Cloudy", 120)
     func3("Partly Cloudy", 10)
-    FahrenheitToCelsius(72)
+    FahrenheitToCelsius(50)
+    CelsiusToFahrenheit(27)
 
   }
 
@@ -40,13 +41,19 @@ object FirstQuestion {
   }
 
 
-  def FahrenheitToCelsius(temperature: Int) {
-    var answer: Double = 0
-    answer = (temperature - 32) * (5 / 3)
-    if (answer == 0){
-      println("Cant be 0")
-    }
-    print(answer)
+  def FahrenheitToCelsius(temperature: Float) {
+    var answer: Float = 0
+    answer = (temperature - 32)
+    answer = answer * (5 / 9)
+    println(answer)
+
+
+  }
+
+  def CelsiusToFahrenheit(temperature: Float) {
+    var answer: Float = 0
+    answer = (temperature * (9 / 5)) + 32
+    println(answer)
 
 
   }
