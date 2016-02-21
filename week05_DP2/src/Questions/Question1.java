@@ -1,4 +1,4 @@
-package Question1;
+package Questions;
 
 public class Question1 {
     //(a)A Strategy pattern captures, a class whose functionality or algorithm can

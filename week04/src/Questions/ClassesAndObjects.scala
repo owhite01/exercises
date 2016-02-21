@@ -1,4 +1,4 @@
-package Question1
+package Questions
 
 /**
   * Created by OliverW on 21/02/2016.
