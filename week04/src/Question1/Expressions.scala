@@ -1,5 +1,5 @@
 
-object FirstQuestion {
+object Expressions {
   def main(args: Array[String]): Unit = {
     func1("Sunny", 100)
     func2("Partly Cloudy", 120)
@@ -43,7 +43,7 @@ object FirstQuestion {
 
   def FahrenheitToCelsius(temperature: Float) {
     var answer: Float = 0
-    answer = (temperature - 32)
+    answer = temperature - 32
     answer = answer * (5 / 9)
     println(answer)
 
