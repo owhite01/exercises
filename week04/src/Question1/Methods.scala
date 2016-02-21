@@ -18,6 +18,14 @@ object Methods {
     val t2 = isArg1GreaterThanArg2(2.1, 1.2)
     assert(t2 == true)
 
+    val m1 = manyTimesString("abc", 3)
+    assert("abcabcabc" == m1, "Test")
+
+    val m2 = manyTimesString("123", 2)
+    assert("123123" == m2, "Test2")
+
+
+
   }
 
 
@@ -27,6 +35,10 @@ object Methods {
 
   def isArg1GreaterThanArg2(num1: Double, num2: Double): Boolean = {
     num1 > num2
+  }
+
+  def manyTimesString(message: String, num3: Int): String = {
+    message * num3
   }
 
 
