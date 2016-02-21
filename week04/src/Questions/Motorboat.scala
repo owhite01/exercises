@@ -11,5 +11,9 @@ class Motorboat {
     "Motor off"
   }
 
+  def signal(): String = {
+    val Flare = new Flare
+    Flare.light()
+  }
 
 }

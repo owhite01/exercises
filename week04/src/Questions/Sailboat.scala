@@ -13,4 +13,9 @@ class Sailboat {
     "Sails lowered"
   }
 
+  def signal(): String = {
+    val Flare = new Flare
+    Flare.light()
+  }
+
 }

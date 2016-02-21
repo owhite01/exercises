@@ -14,6 +14,14 @@ object SailMotorTest {
     val s2 = motorboat.off()
     assert(s2 == "Motor off", "Expected Motor off, Got " + s2)
 
+    val sailboat2 = new Sailboat
+    val signal = sailboat2.signal()
+    assert(signal == "Flare used!", "Expected Flare used! Got " + signal)
+
+    val motorboat2 = new Motorboat
+    val flare2 = motorboat2.signal()
+    assert(flare2 == "Flare used!", "Expected Flare used!, Got " + flare2)
+
 
   }
 
