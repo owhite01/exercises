@@ -13,11 +13,18 @@ class Cup{
       if(percentFull < 0){
         percentFull = 0
     }
-
-
-
-
     percentFull // Return this value
+  }
+
+  def set(userSet: Int): Unit ={
+    percentFull = userSet
+
+  }
+
+  def get(): Int ={
+    percentFull
+
+
   }
 
 

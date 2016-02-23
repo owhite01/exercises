@@ -14,6 +14,10 @@ object testCups {
     assert(cup2.add(-9) == 1)
     assert(cup2.add(-2) == 0)
 
+    val cup3 = new Cup
+    cup3.set(56)
+    assert(cup3.get() == 56)
+
   }
 
 }
