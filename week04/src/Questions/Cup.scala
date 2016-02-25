@@ -1,5 +1,5 @@
 package Questions
-//import com.atomicscala.AtomicTest._
+//import Questions.AtomicTest._
 
 
 class Cup{

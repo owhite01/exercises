@@ -1,10 +1,15 @@
 package Questions
 
+import atomicscala.AtomicTest._
+
 object testCups {
+
+
   def main(args: Array[String]) {
     val cup = new Cup
     assert(cup.add(45) == 45)
     assert(cup.add(-15) == 30)
+    cup.add(45) is 45
 
 
     val cup2 = new Cup

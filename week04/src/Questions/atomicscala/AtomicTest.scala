@@ -1,4 +1,11 @@
-package com.atomicscala
+// AtomicTest.scala
+/* A tiny little testing framework, to
+display results and to introduce & promote
+unit testing early in the learning curve.
+For use in a script or App, include:
+import com.atomicscala.AtomicTest._
+*/
+package Questions.atomicscala
 
 import java.io.FileWriter
 
@@ -34,4 +41,9 @@ class AtomicTest[T](val target: T) {
     str.startsWith(
       exp.replaceAll("\r\n", "\n"))
   }
+}
+
+object AtomicTest {
+  implicit def any2Atomic[T](target: T) =
+    new AtomicTest(target)
 }
