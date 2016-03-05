@@ -1,4 +1,5 @@
 package Questions
+import atomicscala.AtomicTest._
 
 object SailMotorTest {
   def main(args: Array[String]) {
@@ -7,7 +8,7 @@ object SailMotorTest {
     assert(r1 == "Sails raised", "Expected Sails raised, Got " + r1)
 
     val r2 = sailboat.lower()
-    assert(r2 is "Sails lowered", "Expected Sails lowered, Got " + r2)
+    assert(r2 == "Sails lowered", "Expected Sails lowered, Got " + r2)
     val motorboat = new Motorboat
     val s1 = motorboat.on()
     assert(s1 == "Motor on", "Expected Motor on, Got " + s1)
