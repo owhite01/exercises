@@ -22,6 +22,26 @@ class Vector {
 
   }
 
+  def minMax(): Unit = {
+    val ints = Array(1,2,3,4,5,6)
+    val doubles = Array(1.1, 3.6, 5.7, 6.9)
+
+    val myVector1 = Array(1, 2, 3 ,4, 5, 6)
+    val myVector2 = Array(1, 2, 3 ,4, 5, 6)
+
+    myVector1 is myVector2
+
+
+    ints.sum
+    ints.max
+    ints.min
+
+    doubles.sum
+    doubles.max
+    doubles.min
+
+  }
+
 
 }
 
