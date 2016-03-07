@@ -8,7 +8,10 @@ class Item (name: String, price: Double){
     if(grocery == true || medication == true){
       price
     }else{
-      (price*(1+taxRate))
+      //Had to look up how to do this, before i could only get the second one to return
+      //3.300000000003, didnt know another way to round it to 1dp.
+      BigDecimal((price*(1+taxRate))).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
+
     }
   }
 
