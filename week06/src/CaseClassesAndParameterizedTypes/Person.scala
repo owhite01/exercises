@@ -33,12 +33,12 @@ object personTest extends App{
     Vector(c1, c2, c3)
   }
 
-  def explicitList(c1: Double, c2: Double, c3: Double): Vector[Double] = {
-    Vector(c1, c2, c3)
+  def explicitSet(set1: Vector[Double]): Set[Double] = {
+      set1.toSet
   }
 
-  def explicitList(c1: Double, c2: Double, c3: Double): Vector[Double] = {
-    List(c1, c2, c3)
+  def explicitList(vector1: Vector[Double]): List[Double] = {
+    vector1.toList
   }
   inferred('a', 'b', 'c') is "Vector(a, b, c)"
   //explicit('a', 'b', 'c') is "Vector(a, b, c)"
@@ -47,4 +47,8 @@ object personTest extends App{
 
   explicitList(Vector(10.0, 20.0)) is List(10.0, 20.0)
   explicitList(Vector(1, 2, 3)) is List(1.0, 2.0, 3.0)
+
+
+  explicitSet(Vector(10.0, 20.0, 10.0)) is Set(10.0, 20.0)
+  explicitSet(Vector(1, 2, 3, 2, 3, 4)) is Set(1.0, 2.0, 3.0, 4.0)
 }
