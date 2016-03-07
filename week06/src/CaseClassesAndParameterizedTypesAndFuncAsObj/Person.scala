@@ -59,7 +59,7 @@ object personTest extends App{
 
   var emptyString = ""
   val vectorOfNumbers = explicitVector(Vector(1, 2, 3, 4))
-  vectorOfNumbers.foreach(n => emptyString = emptyString + n + ",")
+  vectorOfNumbers.foreach(n => emptyString += n + ",")
   emptyString is "1,2,3,4,"
 
   val dogAge = (y:Int) => y*7
@@ -67,7 +67,7 @@ object personTest extends App{
 
   var emptyString2 = ""
   val vectorOfNumbers2 = Vector(1, 5, 7, 8)
-  vectorOfNumbers2.foreach(y => emptyString2 = emptyString2 + dogAge(y) + " ")
+  vectorOfNumbers2.foreach(y => emptyString2 += dogAge(y) + " ")
   emptyString2 is "7 35 49 56 "
 
 
@@ -75,7 +75,7 @@ object personTest extends App{
 
   var emptyString3 = ""
   val vectorOfNumbers3 = Vector(1, 2, 5, 3, 7)
-  vectorOfNumbers3.foreach(num => emptyString3 = emptyString3 + num*num + " ")
+  vectorOfNumbers3.foreach(num => emptyString3 += num*num + " ")
   emptyString3 is "1 4 25 9 49 "
 
 
