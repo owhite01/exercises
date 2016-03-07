@@ -1,25 +1,37 @@
 package NamedAndDefaultArguments
 import Questions.atomicscala.AtomicTest._
 
-class Tea (name: String, sugar: Boolean, decaf: Boolean, milk: Boolean, calories: Int = 0){
+class Tea (val milk: Boolean = false, val sugar: Boolean  = false,
+           val decaf: Boolean = false, val name: String = "Earl Grey"){
+
   def describe(): String = {
-    name
+    var result = name
+    if(milk == true)
+      result += " + milk"
+    if(sugar == true)
+      result += " + sugar"
+    if(decaf == true)
+      result = result + " decaf"
+    result
   }
 
   def calories(): Int = {
+    var total = 0
     if(milk == true){
-      calories + 100
+      total = total + 100
     }
 
     if (sugar == true){
-      calories + 16
+      total = total + 16
     }
+
+    total
   }
 
 
 }
 
-/*object TeaScript extends App {
+object TeaScript extends App {
   val tea = new Tea
   tea.describe is "Earl Grey"
   tea.calories is 0
@@ -32,5 +44,5 @@ class Tea (name: String, sugar: Boolean, decaf: Boolean, milk: Boolean, calories
   val teaLatte = new Tea(sugar=true, milk=true)
   teaLatte.describe is "Earl Grey + milk + sugar"
   teaLatte.calories is 116
-}*/
+}
 
