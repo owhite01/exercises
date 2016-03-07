@@ -65,6 +65,19 @@ object personTest extends App{
   val dogAge = (y:Int) => y*7
   dogAge(10) is 70
 
+  var emptyString2 = ""
+  val vectorOfNumbers2 = Vector(1, 5, 7, 8)
+  vectorOfNumbers2.foreach(y => emptyString2 = emptyString2 + dogAge(y) + " ")
+  emptyString2 is "7 35 49 56 "
+
+
+
+
+  var emptyString3 = ""
+  val vectorOfNumbers3 = Vector(1, 2, 5, 3, 7)
+  vectorOfNumbers3.foreach(num => emptyString3 = emptyString3 + num*num + " ")
+  emptyString3 is "1 4 25 9 49 "
+
 
 
 }
