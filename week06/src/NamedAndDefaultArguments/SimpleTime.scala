@@ -3,7 +3,7 @@ import Questions.atomicscala.AtomicTest._
 
 
 
-class SimpleTime (val hours: Int, val minutes: Int){
+case class SimpleTime (val hours: Int, val minutes: Int){
 
 
 }
@@ -14,7 +14,7 @@ class SimpleTime2 (val hours: Int, val minutes: Int = 0){
 
 
 
-//Dont need getters and setters for scala as that is already written when a class is instantiated.
+//Dont need getters and setters for scala as that is already written when a case class is instantiated.
 object SimpleTimeTest extends App{
   val t = new SimpleTime(hours=5, minutes=30)
   t.hours is 5
