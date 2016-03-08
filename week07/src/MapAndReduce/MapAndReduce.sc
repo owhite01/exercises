@@ -64,6 +64,17 @@ trait Shape
   }
 
 class Circle extends Shape{
+  def sides(): Int ={
+    side
+  }
+
+  def perimeter(): Double = {
+    2*math.Pi*side
+  }
+
+  def area(): Double = {
+    math.Pi*(side*side)
+  }
 
 }
 
