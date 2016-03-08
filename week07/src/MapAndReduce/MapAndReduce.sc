@@ -67,6 +67,7 @@ class Circle(var dimention: Int) extends Shape{
 val crc = new Circle(10)
 crc.sides()
 crc.perimeter()
+crc.area()
 
 
 
