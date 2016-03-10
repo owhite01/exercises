@@ -38,36 +38,6 @@ addVector()
 sumIt(45, 45, 45, 60) is 195*/
 
 
-trait Shape
-  var side: Int
-  var perim: Int
-  var areaOfShape: Int
-  def sides(){}
-
-  def perimeter(){}
-
-  def area(){}
-
-
-class Circle(var dimention: Int) extends Shape{
-  def sides(): Int ={
-    dimention
-  }
-
-  def perimeter(): Double = {
-    2*math.Pi*dimention
-  }
-
-  def area(): Double = {
-    math.Pi*(dimention*dimention)
-  }
-
-}
-
-val crc = new Circle(10)
-crc.sides()
-crc.perimeter()
-crc.area()
 
 
 
