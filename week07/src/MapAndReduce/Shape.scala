@@ -23,4 +23,47 @@ case class Circle (radius: Double) extends Shape{
 
 }
 
+case class Rectangle (side: Double, side1:Double )extends Shape{
+  def sides(): Int  = {
+    4
+  }
 
+  def perimeter(): Double = {
+    2*(side + side1)
+  }
+
+  def area(): Double = {
+    side * side1
+  }
+
+}
+
+case class Square (side: Double )extends Shape{
+  def sides(): Int = {
+    4
+  }
+
+  def perimeter(): Double = {
+    side*4
+  }
+
+  def area(): Double = {
+    math.pow(side,2)
+  }
+
+}
+
+
+
+object MyShapes extends App{
+
+  val circle = Circle(2.00)
+  println(circle.area), (circle.perimeter), circle.sides)
+
+  val rectangle = Rectangle(3,4)
+  println(rectangle.area,rectangle.perimeter,rectangle.sides)
+
+  val square = Square(5)
+  println(square.area,square.perimeter,square.sides)
+
+}
